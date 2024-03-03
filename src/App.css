@@ -1,0 +1,120 @@
+.App {
+  max-width: 428px;
+  min-height: 599px;
+  background: linear-gradient(to left bottom, red, rgb(228, 94, 5), darkred);
+  border-radius: 50px;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.App::after {
+  content: "";
+  position: absolute;
+  max-width: 428px;
+  min-height: 599px;
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+}
+
+.App h1 {
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+form input[type="text"] {
+  width: 180px;
+  height: 35px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  max-width: 428px;
+}
+
+form button {
+  width: 70px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+form button:active {
+  background-color: yellow;
+  color: black;
+}
+
+input {
+  background-color: #636161;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+form input[type="number"] {
+  width: 64px;
+  height: 35px;
+}
+
+.Todo {
+  display: flex;
+  height: 50px;
+  width: 360px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 2px solid yellow;
+  position: relative;
+  z-index: 2;
+}
+
+.check {
+  color: blue;
+  opacity: 0.5;
+}
+
+.Child {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 20px;
+}
+
+.Child div {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: yellow;
+  color: black;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.Todo button {
+  background-color: transparent;
+  border: none;
+  color: yellow;
+  cursor: pointer;
+}
+
+.again {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.again input {
+  width: 20px;
+  height: 30px;
+}
